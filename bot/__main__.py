@@ -62,8 +62,8 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("Updates Channel", "https://t.me/heliosmirror")
-    buttons.buildbutton("Support Group", "https://t.me/mirrorsociety")
+    buttons.buildbutton(" OWNER ", "https://t.me/bruce_3_33")
+    buttons.buildbutton("Support Group", "https://t.me/+0oXri_0r9PA0OTVl")
     uname = f'<a href="tg://user?id={update.message.from_user.id}">{update.message.from_user.first_name}</a>'
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
@@ -215,7 +215,7 @@ if LEECH_ENABLED:
     )["path"]
 else:
     help = telegraph.create_page(
-        title='Helios-Mirror Help',
+        title='Bruce-Mirror Help',
         content=mirror_help_string_telegraph,
     )["path"]
 
@@ -231,7 +231,7 @@ if user_id == OWNER_ID:
 '''
 
 help_string = f'''
-Hei, Need Help!!
+Hey, Need Help!!
 '''
 
 def bot_help(update, context):
